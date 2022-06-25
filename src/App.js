@@ -16,7 +16,7 @@ function App() {
     {
         id: 1,
         times: 0,
-        star: 0,
+        star: 356,
         checked: false,
         name: 'Build a Sharp Online Presence',
         added: false,
@@ -27,7 +27,7 @@ function App() {
     {
         id: 2,
         times: 0,
-        star: 0,
+        star: 130,
         checked: false,
         name: 'How to start writing your memoir',
         added: false,
@@ -38,7 +38,7 @@ function App() {
     {
         id: 3,
         times: 0,
-        star: 0,
+        star: 211,
         checked: false,
         added: false,
         date: '4th July 2022 09:30 AM',
@@ -53,7 +53,7 @@ const s2 = [
   {
       id: 4,
       times: 0,
-      star: 0,
+      star: 5,
       checked: false,
       name: 'Using Color, Contrast and Scale',
       added: false,
@@ -64,7 +64,7 @@ const s2 = [
   {
       id: 5,
       times: 0,
-      star: 0,
+      star: 98,
       checked: false,
       added: false,
       date: '13th Sept 2022 09:30 AM',
@@ -75,7 +75,7 @@ const s2 = [
   {
       id: 6,
       times: 0,
-      star: 0,
+      star: 145,
       checked: false,
       added: false,
       date: '28th Jun 2022 09:30 AM',
@@ -92,7 +92,7 @@ const [courses1, setCour1] = useState(s1); /*prvi niz usluga koji je na pocetku 
 
 const [courses2, setCour2] = useState(s2); /*drugi niz usliga koji je na pocetku s2*/
 
-/*ova funkcija star1 prima kao ulazni parametar serviceid verovatno od service i prolazi kroz ceo niz i uporedjuje id*/
+/*ova funkcija star1 prima kao ulazni parametar scourseid i prolazi kroz ceo niz i uporedjuje id*/
 
 const star1 = (courseId) => {
   let arr1 = [];
@@ -163,7 +163,7 @@ const star2 = (courseId) => {
   });
   setCour2(arr2);
 }
-/*funkcija za makeapp, isto prima kao parametar serviceid*/
+/*funkcija za startKursa, isto prima kao parametar id*/
 
 const startCour = (courseId) => {
   //console.log(courseId);
